@@ -15,20 +15,25 @@
 
 <body>
 
-  <section class="buttons">
-    <h1><img src="./images/logo.svg" alt="Logo"></h1>
-    <button><img src="./images/icon-document.svg" alt="Document"></button>
-    <button><img src="./images/icon-folder.svg" alt="Folder"></button>
-    <button><img src="./images/icon-upload.svg" alt="Upload"></button>
-  </section>
-
-  <section class="status">
-    <h2>815 <span>GB LEFT</span></h2>
-    <label for="storage-used">You’ve used <strong>815 GB</strong> of your storage</label><br>
-    <progress id="storage-used" max="1000" value="815"></progress><br>
-    <span class="min-storage">0 GB</span>
-    <span class="max-storage">1000 GB</span>
-  </section>
+  <main>
+    <section class="buttons">
+      <h1><img src="./images/logo.svg" alt="Logo" width="130"></h1>
+      <div class="row">
+        <button><img src="./images/icon-document.svg" alt="Document"></button>
+        <button><img src="./images/icon-folder.svg" alt="Folder"></button>
+        <button><img src="./images/icon-upload.svg" alt="Upload"></button>
+      </div>
+    </section>
+    <section class="status">
+      <h2>185 <span>GB LEFT</span></h2>
+      <label for="progress-bar">You’ve used <strong>815 GB</strong> of your storage</label>
+      <div id="progress-bar">
+        <div class="progress-value"></div>
+      </div>
+      <span class="min-storage">0 GB</span>
+      <span class="max-storage">1000 GB</span>
+    </section>
+  </main>
 
   <footer>
     <p class="attribution">
