@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 
 :root {
-    --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    --Gradient: linear-gradient(
+        to right,
+        hsl(6, 100%, 80%),
+        hsl(335, 100%, 65%)
+    );
     --Pale-Blue: hsl(243, 100%, 93%);
     --Grayish-Blue: hsl(229, 7%, 55%);
     --Dark-Blue: hsl(228, 56%, 26%);
@@ -136,11 +140,7 @@ button:hover {
 .progress-value {
     width: 81.5%;
     height: 14px;
-    background: linear-gradient(
-        to right,
-        hsl(6, 100%, 80%),
-        hsl(335, 100%, 65%)
-    );
+    background: var(--Gradient);
     border-radius: 10px;
     position: relative;
 }
