@@ -133,7 +133,6 @@ button:hover {
     padding: 3px;
 }
 
-
 .progress-value {
     width: 81.5%;
     height: 14px;
@@ -146,7 +145,7 @@ button:hover {
     position: relative;
 }
 
-.progress-value::after{
+.progress-value::after {
     content: "";
     width: 10px;
     height: 10px;
@@ -192,4 +191,46 @@ footer {
 
 /* Mobile Version */
 @media screen and (max-width: 375px) {
+    /* Main Section */
+    body {
+        background-image: url(./images/bg-mobile.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    main {
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttons {
+        width: 90%;
+        margin-bottom: 1em;
+    }
+    
+    .status {
+        width: 90%;
+        height: 160px;
+    }
+    
+    .status h2 {
+        right: 25%;
+        top: 80%;
+    }
+    
+    .status h2::after {
+        content: "";
+        display: none;
+    }
+
+    .status label {
+        text-align: center;
+    }
+    
+    /* Footer Section */
+    .attribution {
+        font-size: 12px;
+    }
 }
